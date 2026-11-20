@@ -99,7 +99,7 @@ def fig_palancas():
         ("+1 ambulance (fire stations)", b(N0 + 1)),
         ("Relocate the 17 (equity MEXCLP)", mex),
         ("+3 ambulances (fire stations)", b(N0 + 3)),
-        ("Hospital handover 145 → 90 min", th("Bomberos (actual aprox.)", 90)),
+        (f"Hospital handover {BASE['t_hosp']:.0f} → 90 min", th("Bomberos (actual aprox.)", 90)),
         ("Relocate + handover 90 min", th("MEXCLP equitativo", 90)),
     ]
     df = pd.DataFrame(filas, columns=["palanca", "resp"])

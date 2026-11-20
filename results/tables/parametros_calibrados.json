@@ -1,12 +1,12 @@
 {
-  "t_hosp": 145.0,
-  "alfa": 0.95,
+  "t_hosp": 150.0,
+  "alfa": 0.9,
   "t_reg_med": 6.0,
   "verificacion": {
-    "resp_acc": 13.961,
-    "resp_med": 21.245,
-    "p_sin_recurso": 0.068,
-    "ocupacion": 0.579
+    "resp_acc": 13.56,
+    "resp_med": 20.892,
+    "p_sin_recurso": 0.073,
+    "ocupacion": 0.587
   },
   "objetivos": {
     "resp_acc": 13.7,

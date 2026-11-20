@@ -113,7 +113,7 @@ def e2_flota(D, flotas=range(13, 31), q=0.58,
     # palanca 3: tiempo de entrega en IPS, con la flota oficial
     for nom in ("Bomberos (actual aprox.)", "MEXCLP equitativo"):
         b = construir(D, nom, N0, E, q)
-        for th in (145, 120, 90, 60, 30):
+        for th in (BASE["t_hosp"], 120, 90, 60, 30):
             df = correr(D, b, rep=10, t_hosp=th)
             m = df.mean(numeric_only=True)
             filas.append({"estrategia": nom + " | t_hosp", "flota": N0, "t_hosp": th, **m.to_dict()})
