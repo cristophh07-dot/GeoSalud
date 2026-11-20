@@ -28,7 +28,7 @@ Simulación con la flota oficial de 17 ambulancias, 20 réplicas de 30 días y d
 - **La brecha no es geográfica.** Las emergencias médicas esperan unos 7,5 minutos más que los accidentes. Que ocurran en zonas más lejanas explica 2,3 minutos; la prioridad de los accidentes en la cola, otros 2,3; y una regulación telefónica más larga, 3,1.
 - **El sistema está al borde.** Con 15 ambulancias el promedio sube a 23 minutos; con 13, a 38.
 - **Reubicar vale más que una ambulancia nueva.** MEXCLP equitativo con 17 ambulancias (15,3 min) supera a las bases de bomberos con 18 (15,5 min). El MEXCLP sin restricción baja aún más el promedio (14,7 min), pero empeora los corregimientos (45 min); la versión equitativa los mejora.
-- **El método del proyecto original empeora el servicio.** El K-Means ponderado da 19,9 minutos, porque dispersa la flota en 17 sitios cuando el sistema está ocupado el 59 % del tiempo.
+- **Agrupar la demanda con K-Means empeora el servicio frente a la operación actual.** El K-Means ponderado da 19,9 minutos, porque dispersa la flota en 17 sitios cuando el sistema está ocupado el 59 % del tiempo.
 - **La palanca más grande está en las clínicas.** Bajar la entrega del paciente de 150 a 90 minutos ahorra 3,5 minutos, más que agregar 3 ambulancias (3,0). Junto con la reubicación, el promedio llega a 11,7 minutos (−31 %) y el de las emergencias médicas baja de 21,2 a 14,6.
 - **Validación externa.** La distribución por comuna de los casos sin ambulancia disponible que predice el modelo coincide con los casos *SinRecurso* reales de 2022 (Spearman ρ = 0,92), un dato que no se usó para calibrar.
 
